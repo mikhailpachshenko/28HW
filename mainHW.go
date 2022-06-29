@@ -12,11 +12,9 @@ func main() {
 	for {
 		s := ss.Student{}
 		fmt.Println("Введите имя, возраст и оценку студента:")
-		fmt.Println("Введите имя, возраст и оценку студента:")
-
+		
 		_, err := fmt.Scan(&s.Name, &s.Age, &s.Grade)
 		if err == io.EOF {
-			fmt.Print("Список студентов:\n")
 			fmt.Print("Список студентов:\n")
 			break
 		}
@@ -29,7 +27,6 @@ func main() {
 
 	count := 1
 	for _, student := range studentMap.GetAll() {
-		fmt.Print(count, ": ", student.Name, " ", student.Age, " ", student.Grade, "\n")
 		fmt.Print(count, ": ", student.Name, " ", student.Age, " ", student.Grade, "\n")
 		count++
 	}
