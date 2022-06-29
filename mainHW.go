@@ -12,6 +12,7 @@ func main() {
 	for {
 		s := ss.Student{}
 		fmt.Println("Введите имя, возраст и оценку студента:")
+		fmt.Println("Введите имя, возраст и оценку студента:")
 
 		_, err := fmt.Scan(&s.Name, &s.Age, &s.Grade)
 		if err == io.EOF {
