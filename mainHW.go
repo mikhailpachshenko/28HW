@@ -30,6 +30,7 @@ func main() {
 	count := 1
 	for _, student := range studentMap.GetAll() {
 		fmt.Print(count, ": ", student.Name, " ", student.Age, " ", student.Grade, "\n")
+		fmt.Print(count, ": ", student.Name, " ", student.Age, " ", student.Grade, "\n")
 		count++
 	}
 }
