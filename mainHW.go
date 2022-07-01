@@ -16,7 +16,6 @@ func main() {
 		_, err := fmt.Scan(&s.Name, &s.Age, &s.Grade)
 		if err == io.EOF {
 			fmt.Print("Список студентов:\n")
-			fmt.Print("Список студентов:\n")
 			break
 		}
 
